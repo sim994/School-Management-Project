@@ -29,6 +29,7 @@ export function Login() {
       toast.error("Something went wrong");
     }
   };
+
   return (
     <section className="login-form">
       <form onSubmit={submit}>
@@ -58,8 +59,7 @@ export function Login() {
         </div>
         <div className="condition-text-box">
           <p>
-            <input type="radio" name="keep login" /> Keep me login in for 30
-            days
+            <input type="radio" name="keeplogin" /> Keep me login in for 30 days
           </p>
           <p>Forget Password?</p>
         </div>

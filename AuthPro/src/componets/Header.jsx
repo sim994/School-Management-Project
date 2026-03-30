@@ -9,6 +9,10 @@ export function Header() {
   const toggleMenu = (menu) => {
     setActiveMenu(activeMenu === menu ? null : menu);
   };
+
+  setTimeout(() => {
+    setActiveMenu(null);
+  }, 5000);
   return (
     <nav>
       {/* <img src={close} alt="Image not found" /> */}

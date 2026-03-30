@@ -822,6 +822,8 @@ form .header {
 }
 
 form .header h1 {
+    font-size: 2rem;
+    font-weight: 700;
     margin: 11px 0;
     font-family: var(--font);
 }
@@ -840,6 +842,10 @@ form  .login-btn{
     padding: 10px;
     background-color: var(--main-color);
     border: none;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: row;
     border-radius: 30px;
     font-family: var(--font);
     font-size: 1.2rem;
@@ -848,7 +854,7 @@ form  .login-btn{
 }
 
 form .login-btn img{
-    transform: translate(20px,3px);
+    transform: translate(30px,0);
 }
 
 .login-form .input-wrapper {
@@ -862,7 +868,7 @@ form .login-btn img{
 
 .input-wrapper img {
     position: absolute;
-    top: 39px;
+    top: 45px;
     left: 5%;
     cursor: pointer;
 }
