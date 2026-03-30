@@ -14,6 +14,7 @@
 
 :root {
     --font: myfont;
+    --font-color: #6b7280;
     --default-color: #ffffff;
     --main-color: #2563EB;
     --default-font-color: black;
@@ -836,14 +837,14 @@ form .header p {
 
 
 
-form  .login-btn{
+form .login-btn {
     width: 85%;
     margin: 10px 0;
     padding: 10px;
     background-color: var(--main-color);
     border: none;
     display: flex;
-    justify-content:center;
+    justify-content: center;
     align-items: center;
     flex-direction: row;
     border-radius: 30px;
@@ -853,8 +854,8 @@ form  .login-btn{
     color: white;
 }
 
-form .login-btn img{
-    transform: translate(30px,0);
+form .login-btn img {
+    transform: translate(30px, 0);
 }
 
 .login-form .input-wrapper {
@@ -894,21 +895,106 @@ form .login-btn img{
     font-weight: 400;
     font-family: var(--font);
 }
-.condition-text-box p:nth-child(2){
+
+.condition-text-box p:nth-child(2) {
     font-size: 1rem;
     font-weight: 400;
     font-family: var(--font);
     color: var(--main-color);
 }
 
-form p,a {
+form p,
+a {
     font-size: 1rem;
     font-weight: 400;
     font-family: var(--font);
 }
 
-form a{
+form a {
     color: var(--main-color);
+}
+
+
+/* ===== Student Data Table Css Start Form Here ===== */
+
+.data-table-section {
+    width: 100%;
+    padding: 50px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--component-background-color);
+}
+
+.data-table-section .table-wrapper {
+    padding: 90px 0;
+    min-width: 1100px;
+    background-color: var(--default-color);
+    border-radius: 13px;
+    padding: 20px;
+}
+
+.table-wrapper .table-info-header {
+    width: 100%;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+
+.basic-info-section h1 {
+    font-family: var(--font);
+    font-weight: 700;
+    font-size: 1.7rem;
+}
+
+.basic-info-section p {
+    font-family: var(--font);
+    font-weight: 400;
+    font-size: 1rem;
+    color: var(--font-color);
+}
+
+.functionality-section {
+    width: 30%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas:
+        "search search"
+        "options addstudent";
+
+}
+
+.functionality-section .search-filter{
+    grid-area: search;
+    width: 100%;
+    padding: 10px 14px;
+    border: 1.5px solid #e2e8f0;
+    border-radius: 10px;
+    font-size: 0.875rem;
+    font-family: 'Nunito', var(--font), sans-serif;
+    font-weight: 600;
+    color: #1e293b;
+    background-color: #ffffff;
+    outline: none;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.functionality-section select {
+    grid-area: options;
+    width: 100%;
+    padding: 10px 14px;
+    border: 1.5px solid #e2e8f0;
+    border-radius: 10px;
+    font-size: 0.875rem;
+    font-family: 'Nunito', var(--font), sans-serif;
+    font-weight: 600;
+    color: #1e293b;
+    background-color: #ffffff;
+    outline: none;
+    transition: border-color 0.2s, box-shadow 0.2s;
 }
 
 /* === Footer Section Start From Here === */
@@ -942,7 +1028,7 @@ form a{
 }
 
 .footer-about p {
-    color: #6b7280;
+    color: var(--font-color);
     margin-top: 10px;
     line-height: 1.6;
     font-family: var(--font);
@@ -958,7 +1044,7 @@ form a{
 
 .footer-links li {
     margin-bottom: 8px;
-    color: #6b7280;
+    color: var(--font-color);
     cursor: pointer;
     font-family: var(--font);
 }
