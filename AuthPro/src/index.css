@@ -1,0 +1,278 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  list-style: none;
+}
+
+@font-face {
+  font-family: myfont;
+  src: url("./assets/fonts/font2.ttf");
+}
+
+/* ===== Header Wrapper ===== */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 20px 24px;
+  border-radius: 14px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+  flex-wrap: wrap;
+}
+
+/* ===== Search Input ===== */
+header input {
+  flex: 1;
+  /* takes remaining space */
+  min-width: 220px;
+  padding: 12px 16px;
+  font-size: 14px;
+  border-radius: 10px;
+  border: 1px solid #e5e7eb;
+  transition: all 0.25s ease;
+}
+
+/* Focus Effect */
+header input:focus {
+  border-color: #6366f1;
+  background: #ffffff;
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.2);
+}
+
+/* ===== Select Dropdown ===== */
+header select {
+  min-width: 180px;
+  padding: 12px 16px;
+  font-size: 14px;
+  border-radius: 10px;
+  border: 1px solid #e5e7eb;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+header select:focus {
+  border-color: #6366f1;
+  background: #ffffff;
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.2);
+}
+
+/* ===== Responsive Design ===== */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  header input,
+  header select {
+    width: 100%;
+  }
+}
+
+.pokemon-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+  padding: 40px;
+}
+
+.pokemon-card {
+  background: linear-gradient(145deg, #ffffff, #f3f4f6);
+  border-radius: 18px;
+  padding: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.pokemon-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.15);
+}
+
+/* Image Section */
+.pokemon-card img {
+  width: 250px;
+  height: 250px;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto 15px auto;
+}
+
+/* Info List */
+.pokiinfo {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.pokiinfo li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 0;
+  border-bottom: 1px solid #e5e7eb;
+  font-size: 14px;
+}
+
+.pokiinfo li:last-child {
+  border-bottom: none;
+}
+
+.pokiinfo span {
+  font-weight: 600;
+  color: #6b7280;
+  font-size: 13px;
+}
+
+/* Pokémon Name Highlight */
+.pokemon-card h2 {
+  text-align: center;
+  text-transform: capitalize;
+  margin-bottom: 10px;
+}
+
+/* users page css start form here  */
+
+/* ===== USERS CONTAINER ===== */
+.users-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 30px 15px;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+}
+
+/* ===== USER CARD ===== */
+.user-card {
+  padding: 18px;
+  border-radius: 14px;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.05);
+  transition: 0.3s ease;
+}
+
+.user-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* ===== HEADER ===== */
+.user-header {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.user-image {
+  margin: auto;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #4f46e5;
+  margin-bottom: 8px;
+}
+
+.user-name {
+  font-size: 16px;
+  font-weight: 600;
+  color: #111827;
+  margin-bottom: 2px;
+}
+
+.user-id {
+  font-size: 12px;
+  color: #6b7280;
+}
+
+/* ===== INFO SECTION ===== */
+.user-info {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.info-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 13px;
+  padding: 6px 8px;
+  border-radius: 8px;
+  background: #f9fafb;
+}
+
+.info-row span {
+  font-weight: 600;
+  color: #374151;
+}
+
+.info-row p {
+  margin: 0;
+  font-weight: 500;
+  color: #111827;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 480px) {
+  .info-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2px;
+  }
+}
+
+/* ===== RESPONSIVE BREAKPOINTS ===== */
+@media (max-width: 768px) {
+  .users-container {
+    padding: 30px 15px;
+    gap: 20px;
+  }
+
+  .user-card {
+    padding: 20px;
+  }
+
+  .user-name {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .users-container {
+    grid-template-columns: 1fr;
+    padding: 20px 12px;
+  }
+
+  .info-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+  }
+}
+
+.btns {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.btns button {
+  margin: 0 20px;
+  padding: 10px 15px;
+  border: 1px solid blue;
+  border-radius: 15px;
+}
+
+.btns button:hover {
+  background: blue;
+  color: white;
+  transition: all 0.3s ease;
+}
