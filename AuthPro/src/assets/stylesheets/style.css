@@ -937,66 +937,94 @@ form a {
 .table-wrapper .table-info-header {
     width: 100%;
     padding: 20px 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: row;
 }
 
-.basic-info-section h1 {
-    font-family: var(--font);
-    font-weight: 700;
-    font-size: 1.7rem;
-}
+/*
+    .basic-info-section h1 {
+        margin: 13px 0;
+        font-family: var(--font);
+        font-weight: 700;
+        font-size: 1.9rem;
+    }
 
-.basic-info-section p {
-    font-family: var(--font);
-    font-weight: 400;
-    font-size: 1rem;
-    color: var(--font-color);
-}
+    .basic-info-section p {
+        font-family: var(--font);
+        font-weight: 400;
+        font-size: 1.1rem;
+        color: var(--font-color);
+    } */
 
 .functionality-section {
-    width: 30%;
+    width: 100%;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: 2fr 1rf auto;
+    grid-template-rows: 1fr 1fr 1fr;
     grid-template-areas:
-        "search search"
-        "options addstudent";
-
+        "search search search"
+        " filter filter filter"
+        "search-student search-student add-student"
+    ;
+    gap: 10px;
+    align-items: center;
 }
 
-.functionality-section .search-filter{
+.functionality-section .search-filter {
     grid-area: search;
-    width: 100%;
     padding: 10px 14px;
     border: 1.5px solid #e2e8f0;
     border-radius: 10px;
     font-size: 0.875rem;
-    font-family: 'Nunito', var(--font), sans-serif;
+    font-family: var(--font);
     font-weight: 600;
     color: #1e293b;
     background-color: #ffffff;
     outline: none;
-    transition: border-color 0.2s, box-shadow 0.2s;
 }
 
 .functionality-section select {
-    grid-area: options;
-    width: 100%;
     padding: 10px 14px;
     border: 1.5px solid #e2e8f0;
     border-radius: 10px;
     font-size: 0.875rem;
-    font-family: 'Nunito', var(--font), sans-serif;
+    font-family: var(--font);
     font-weight: 600;
     color: #1e293b;
     background-color: #ffffff;
     outline: none;
-    transition: border-color 0.2s, box-shadow 0.2s;
 }
 
+.functionality-section .search-data-btn {
+    grid-area: search-student;
+    padding: 7px 30px;
+    border:1px solid var(--main-color);
+    border-radius: 10px;
+    font-family: var(--font);
+    font-size:.875rem;
+    font-weight: 600;
+    color: black;
+    transition: all 0.2s linear;
+}
+
+.search-data-btn:hover {
+    background-color: var(--main-color);
+    color: white;
+    border-color: var(--main-color);
+}   
+
+.functionality-section .add-data-btn {
+    grid-area: add-student;
+    padding: 7px 30px;
+    background-color: var(--main-color);
+    border: none;
+    border-radius: 10px;
+}
+
+.add-data-btn a {
+    font-family: var(--font);
+    font-size: .875rem;
+    font-weight: 600;
+    color: white;
+}
 /* === Footer Section Start From Here === */
 
 
