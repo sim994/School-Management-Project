@@ -918,6 +918,7 @@ form a {
 /* ===== Student Data Table Css Start Form Here ===== */
 
 .data-table-section {
+    min-width: 418px;
     width: 100%;
     padding: 50px 0;
     display: flex;
@@ -955,6 +956,7 @@ form a {
     } */
 
 .functionality-section {
+    min-width: 418px;
     width: 100%;
     display: grid;
     grid-template-columns: 2fr 1rf auto;
@@ -996,10 +998,10 @@ form a {
 .functionality-section .search-data-btn {
     grid-area: search-student;
     padding: 7px 30px;
-    border:1px solid var(--main-color);
+    border: 1px solid var(--main-color);
     border-radius: 10px;
     font-family: var(--font);
-    font-size:.875rem;
+    font-size: .875rem;
     font-weight: 600;
     color: black;
     transition: all 0.2s linear;
@@ -1009,7 +1011,7 @@ form a {
     background-color: var(--main-color);
     color: white;
     border-color: var(--main-color);
-}   
+}
 
 .functionality-section .add-data-btn {
     grid-area: add-student;
@@ -1025,6 +1027,14 @@ form a {
     font-weight: 600;
     color: white;
 }
+
+/* ===== Table Css Start From Here ===== */
+.data-table {
+    width: 100%;
+}
+
+    
+
 /* === Footer Section Start From Here === */
 
 

@@ -38,7 +38,7 @@ export function Datatable() {
               <option value="All classes">All Statuses</option>
               <option value="Active">Active</option>
               <option value="Inactive">Inactive</option>
-              <option value="Suspend">Suspend</option>
+              <option value="Suspend">Suspended</option>
               <option value="On Leave">On Leave</option>
             </select>
             <button className="search-data-btn">Search Student</button>
@@ -48,30 +48,7 @@ export function Datatable() {
           </section>
         </div>
         <table className="data-table">
-          <thead>
-            <tr>
-              <th>STUDENT</th>
-              <th>CLASS</th>
-              <th>SECTION</th>
-              <th>ROLL NO</th>
-              <th>PARENT CONTACTS</th>
-              <th>STATUS</th>
-              <th>ACTIONS</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>
-                <img src="" alt="Image Not Found" />
-              </td>
-              <td>Class 1</td>
-              <td>Section A</td>
-              <td>34</td>
-              <td>+91 99034 38474</td>
-              <td>Active</td>
-              <td className="student-actions"></td>
-            </tr>
-          </tbody>
+            
         </table>
       </div>
     </section>
