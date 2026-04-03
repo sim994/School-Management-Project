@@ -1,26 +1,34 @@
-import React, { use, useLayoutEffect } from "react";
+import React, { useLayoutEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 export function LanguageBox(props) {
+  let cardRef = useRef(null);
   gsap.registerPlugin(ScrollTrigger);
   useLayoutEffect(() => {
-    gsap.utils.toArray(".lang-card").forEach((card) => {
-      gsap.from(card, {
-        scale: 0.8,
-        opacity: 0,
+    const ctx = gsap.context(() => {
+      const tl = gsap.timeline({
         scrollTrigger: {
-          trigger: card,
-          start: "top 15%",
-          end: "bottom 15%",
+          trigger: cardRef.current,
+          start: "top 90%",
+          end: "bottom 80%",
           scrub: 1,
-          markers: true,
         },
       });
-    });
+
+      tl.from(cardRef.current, {
+        y: 110,
+        scale: 0.8,
+        opacity: 0,
+        duration: 1,
+        ease: "power2.out",
+      });
+    }, cardRef); 
+
+    return () => ctx.revert(); 
   }, []);
   return (
-    <div className="lang-card">
+    <div className="lang-card" ref={cardRef}>
       <img src={props.img} alt="Image not found" />
       <p>{props.name}</p>
       <h2>{props.usecase}</h2>
