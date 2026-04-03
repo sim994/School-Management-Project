@@ -745,9 +745,8 @@ video {
 .language-section h1 {
     position: relative;
     margin-top: 40px;
-    margin-left: 100px;
     width: 100%;
-    text-align: left;
+    text-align: center;
     font-family: var(--font);
     font-weight: 700;
     font-size: 3rem;

@@ -1,10 +1,12 @@
 import React from 'react'
 
-export function KeyFeatureCard() {
+export function KeyFeatureCard(props) {
   return (
-    <>
-    <h1>Key Feature Card</h1>
-    </>
+    <div className="key-feature-card">
+      <img src={props.featureImage} alt="Key Feature" />
+      <h3>{props.featureName}</h3>
+      <p>{props.descriptions}</p>
+    </div>
   )
 }
 
