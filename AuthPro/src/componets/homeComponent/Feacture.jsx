@@ -1,8 +1,8 @@
 import React from "react";
 import { FeactureCard } from "../FeactureCard";
-import student from "../../assets/feactureIcon/student.png";
-import auth from "../../assets/feactureIcon/auth.png";
-import table from "../../assets/feactureIcon/table.png";
+import student from "../homeComponent/feactureIcon/student.png";
+import auth from "../homeComponent/feactureIcon/auth.png";
+import table from "../homeComponent/feactureIcon/table.png";
 
 export function Feacture() {
   return (
@@ -16,7 +16,7 @@ export function Feacture() {
       </div>
       <div className="feacture-card-section">
         <FeactureCard
-          img="../feactureIcon/student.png"
+          img={student}
           title="Add & Manage Students"
           description="Easily create, update, and
           delete student records with an
