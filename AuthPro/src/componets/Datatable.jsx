@@ -26,6 +26,13 @@ export function Datatable() {
               <option value="Class 3">class 3</option>
               <option value="Class 4">class 4</option>
               <option value="Class 5">class 5</option>
+              <option value="Class 6">class 6</option>
+              <option value="Class 7">class 7</option>
+              <option value="Class 8">class 8</option>
+              <option value="Class 9">class 9</option>
+              <option value="Class 10">class 10</option>
+              <option value="Class 11">class 11</option>
+              <option value="Class 12">class 12</option>
             </select>
             <select name="All sections" id="section">
               <option value="All classes">All Sections</option>
@@ -33,6 +40,7 @@ export function Datatable() {
               <option value="B"> B</option>
               <option value="C"> C</option>
               <option value="D"> D</option>
+              <option value="E"> E</option>
             </select>
             <select name="All statuses" id="status">
               <option value="All classes">All Statuses</option>

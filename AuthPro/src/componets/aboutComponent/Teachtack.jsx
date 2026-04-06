@@ -1,9 +1,9 @@
 import React from "react";
 import { LanguageBox } from "../LanguageBox";
-import  react  from "../../assets/LanguageIcon/react.png";
-import  nodejs  from "../../assets/LanguageIcon/nodejs.png";
-import  mongodb  from "../../assets/LanguageIcon/mongodb.png";
-import  express from "../../assets/LanguageIcon/express.png";
+import  react  from "../aboutComponent/LanguageIcon/react.png";
+import  nodejs  from "../aboutComponent/LanguageIcon/nodejs.png";
+import  mongodb  from "../aboutComponent/LanguageIcon/mongodb.png";
+import  express from "../aboutComponent/LanguageIcon/express.png";
 
 export function Teachtack() {
   return (

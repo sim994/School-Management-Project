@@ -3,9 +3,9 @@ import React, { useState, useContext } from "react";
 import { useNavigate, NavLink } from "react-router-dom";
 import { toast } from "react-toastify";
 import { AuthContext } from "./Token";
-import email from "../../src/assets/loginicon/email.png";
-import password from "../../src/assets/loginicon/password.png";
-import loginbtn from "../../src/assets/loginicon/loginbtn.png";
+import email from "../componets/loginicon/email.png";
+import password from "../componets/loginicon/password.png";
+import loginbtn from "../componets/loginicon/loginbtn.png";
 
 export function Login() {
   let Navigate = useNavigate();

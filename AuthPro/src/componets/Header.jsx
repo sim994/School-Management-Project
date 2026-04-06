@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
-import logo from "../assets/logos/logo.png";
-import close from "../../public/icons/close.png";
+import logo from "../logos/logo.png";
 
 export function Header() {
   const [activeMenu, setActiveMenu] = useState(null);

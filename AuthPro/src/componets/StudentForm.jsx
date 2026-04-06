@@ -1,8 +1,7 @@
 import React, { useRef, useState } from "react";
 import { NavLink } from "react-router-dom";
-import container from "../../public/icons/container.svg";
-import Button from "../../public/icons/Button.svg";
-import defaultimg from "../../public/images/defaultimg.png";
+import container from "../icons/container.svg";
+import Button from "../icons/Button.svg";
 
 export function StudentForm() {
   let inputfileref = useRef(null);
