@@ -13,6 +13,7 @@ import { About } from "./componets/About";
 import { Datatable } from "./componets/Datatable";
 import { StudentForm } from "./componets/StudentForm";
 import { Signup } from "./componets/Signup";
+import { Contactus } from "./componets/Contactus";
 
 import { AuthProvider } from "./componets/Token";
 export function App() {
@@ -65,6 +66,11 @@ export function App() {
           path: "/users",
           element: <Users />,
         },
+        {
+          path: "/contactus",
+          element: <Contactus />,
+        },
+
         {
           path: "*",
           element: <h1>Page not found</h1>,

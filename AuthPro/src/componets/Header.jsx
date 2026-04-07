@@ -29,7 +29,7 @@ export function Header() {
             <NavLink to="/aboutproject">About Project</NavLink>
           </li>
           <li className="link">
-            <NavLink to="/contact">Contact Us</NavLink>
+            <NavLink to="/contactus">Contact Us</NavLink>
           </li>
           {/* Student Dropdown */}
           <li className="dropdown">
