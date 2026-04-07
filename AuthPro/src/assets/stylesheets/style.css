@@ -844,7 +844,7 @@ video {
 .key-feature-card p {
     grid-area: description;
     font-family: var(--font);
-    font-weight:500;
+    font-weight: 500;
     font-size: 1rem;
 }
 
@@ -1087,6 +1087,43 @@ form a {
     width: 100%;
 }
 
+
+/* ===== contack-us-section start from here ====== */
+
+.contack-us-section {
+    padding: 90px 0;
+}
+
+.contack-us-section .section-wrapper {
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+.section-wrapper .heading-part {
+    padding: 45px 0;
+    width: 100%;
+}
+
+.section-wrapper h1 {
+    max-width: 100%;
+    text-align: center;
+    font-family: var(--font);
+    font-weight: 900;
+    font-size: 3.5rem;
+}
+
+.section-wrapper p {
+    max-width: 50%;
+    font-family: var(--font);
+    font-weight: 800;
+    font-size: 1.1rem;
+    color: var(--font-color);
+    text-align: center;
+}
 
 
 /* === Footer Section Start From Here === */
