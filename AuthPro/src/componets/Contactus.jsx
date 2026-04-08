@@ -7,6 +7,8 @@ export function Contactus() {
   return (
     <section className="contack-us-section">
       <div className="section-wrapper">
+        {/* Hero Section */}
+
         <div className="heading-part">
           <h1>Get in Touch</h1>
           <p>
@@ -14,27 +16,34 @@ export function Contactus() {
             team typically responds within 2 business hours.
           </p>
         </div>
+
         <section className="contack-detail-section">
-          <div className="our-info">
-            <img src={email} alt="Email Icon" />
-            <h4>Email Support</h4>
-            <p className="question">Questions about our platform?</p>
-            <p className="our-details">student@management.com</p>
+          {/* Contact Details Section */}
+
+          <div className="details-section">
+            <div className="our-info">
+              <img src={email} alt="Email Icon" />
+              <h4>Email Support</h4>
+              <p className="question">Questions about our platform?</p>
+              <p className="our-details">student@management.com</p>
+            </div>
+            <div className="our-info">
+              <img src={phonecall} alt="Phone Call Icon" />
+              <h4>Call Us</h4>
+              <p className="question">Mon-Fri from 8am to 6pm PST.</p>
+              <p className="our-details">+91 1112495283</p>
+            </div>
+            <div className="our-info">
+              <img src={location} alt="Location Icon" />
+              <h4>Office</h4>
+              <p className="question">Visit our Silicon Valley campus.</p>
+              <p className="our-details">123 Main Street, City, State 12345</p>
+            </div>
+            <div className="our-info"></div>
           </div>
-          <div className="our-info">
-            <img src={phonecall} alt="Phone Call Icon" />
-            <h4>Call Us</h4>
-            <p className="question">Mon-Fri from 8am to 6pm PST.</p>
-            <p className="our-details">(123) 456-7890</p>
-          </div>
-          <div className="our-info">
-            <img src={location} alt="Location Icon" />
-            <h4>Office</h4>
-            <p className="question">Visit our Silicon Valley campus.</p>
-            <p className="our-details">123 Main Street, City, State 12345</p>
-          </div>
-          <div className="our-info"></div>
-          <section className="form-section">
+
+          {/* Contact Form Section */}
+
             <form className="contack-us-form">
               <div className="input-wrapper">
                 <label>Full Name</label>
@@ -57,18 +66,15 @@ export function Contactus() {
               <div className="input-wrapper">
                 <label>Message</label>
                 <textarea
-                  placeholder="How Can We Help You?"
+                  placeholder="How can we help you?"
                   cols={10}
-                  rows={10}
+                  rows={5}
                 ></textarea>
               </div>
               <button type="submit">Submit</button>
             </form>
-          </section>
         </section>
       </div>
     </section>
   );
 }
-
-

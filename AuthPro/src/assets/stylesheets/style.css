@@ -1091,7 +1091,8 @@ form a {
 /* ===== contack-us-section start from here ====== */
 
 .contack-us-section {
-    padding: 90px 0;
+    padding: 30px 0;
+    background-color: var(--component-background-color);
 }
 
 .contack-us-section .section-wrapper {
@@ -1125,6 +1126,39 @@ form a {
     text-align: center;
 }
 
+.contack-detail-section {
+    padding: 50px 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+}
+
+.contack-detail-section .details-section {
+    width: 48%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+
+.details-section .our-info {
+    margin: 20px 0;
+    width: 100%;
+    background-color: var(--default-color);
+    border-radius: 13px;
+}
+
+.contack-detail-section .contack-us-form {
+    width: 40%;
+    min-height: 500px;
+    padding: 20px;
+    align-self: flex-start;
+    border-radius: 27px;
+    background-color: var(--default-color);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
 
 /* === Footer Section Start From Here === */
 
