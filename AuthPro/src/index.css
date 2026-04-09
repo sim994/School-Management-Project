@@ -276,3 +276,138 @@ header select:focus {
   color: white;
   transition: all 0.3s ease;
 }
+
+/* ===== Contact Section ===== */
+.contact-section {
+  min-height: calc(100vh - 200px);
+  padding: 40px 20px;
+  background: #f8f9fa;
+}
+
+.contact-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 50px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+}
+
+.contact-form-wrapper {
+  flex: 1;
+}
+
+.contact-header {
+  margin-bottom: 30px;
+}
+
+.contact-header h1 {
+  font-size: 32px;
+  font-weight: 700;
+  color: #1a1a2e;
+  margin-bottom: 10px;
+}
+
+.contact-header p {
+  font-size: 15px;
+  color: #666;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-row {
+  display: flex;
+  gap: 20px;
+}
+
+.input-group {
+  flex: 1;
+}
+
+.input-group input,
+.input-group textarea {
+  width: 100%;
+  padding: 16px 20px;
+  border: 2px solid #e8e8e8;
+  border-radius: 12px;
+  font-size: 15px;
+  transition: all 0.3s ease;
+  background: #fafafa;
+}
+
+.input-group input:focus,
+.input-group textarea:focus {
+  outline: none;
+  border-color: #4f46e5;
+  background: #fff;
+  box-shadow: 0 0 0 4px rgba(79, 70, 229, 0.1);
+}
+
+.input-group textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.submit-btn {
+  padding: 16px 32px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.submit-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(102, 126, 234, 0.4);
+}
+
+.contact-image-wrapper {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-image-wrapper img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 16px;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 900px) {
+  .contact-container {
+    flex-direction: column-reverse;
+    padding: 30px;
+  }
+
+  .form-row {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-container {
+    padding: 20px;
+  }
+
+  .contact-header h1 {
+    font-size: 24px;
+  }
+
+  .input-group input,
+  .input-group textarea {
+    padding: 14px 16px;
+  }
+}

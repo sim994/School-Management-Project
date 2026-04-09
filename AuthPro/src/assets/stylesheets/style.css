@@ -994,20 +994,6 @@ form a {
     padding: 20px 0;
 }
 
-/*
-    .basic-info-section h1 {
-        margin: 13px 0;
-        font-family: var(--font);
-        font-weight: 700;
-        font-size: 1.9rem;
-    }
-
-    .basic-info-section p {
-        font-family: var(--font);
-        font-weight: 400;
-        font-size: 1.1rem;
-        color: var(--font-color);
-    } */
 
 .functionality-section {
     min-width: 418px;
@@ -1117,7 +1103,7 @@ form a {
     font-size: 3.5rem;
 }
 
-.section-wrapper p {
+.section-wrapper .sub-heading {
     max-width: 50%;
     font-family: var(--font);
     font-weight: 800;
@@ -1126,39 +1112,165 @@ form a {
     text-align: center;
 }
 
+/*===== CONTACT DETAIL SECTION - MAIN LAYOUT  ====== */
 .contack-detail-section {
-    padding: 50px 0;
     width: 100%;
     display: flex;
-    justify-content: space-around;
-    align-items: center;
+    justify-content: space-between;
+    align-items: flex-start;
     flex-direction: row;
+    gap: 2rem;
 }
 
+/*====== LEFT SIDE — info cards ====== */
 .contack-detail-section .details-section {
-    width: 48%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-direction: column;
-}
-
-.details-section .our-info {
-    margin: 20px 0;
-    width: 100%;
-    background-color: var(--default-color);
-    border-radius: 13px;
-}
-
-.contack-detail-section .contack-us-form {
     width: 40%;
-    min-height: 500px;
-    padding: 20px;
-    align-self: flex-start;
-    border-radius: 27px;
-    background-color: var(--default-color);
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: stretch;
 }
+
+/* ===== EACH INFO CARD ===== */
+.details-section .our-info {
+    width: 100%;
+    padding: 20px 16px;
+    background-color: var(--default-color);
+    border-radius: 12px;
+    display: grid;
+    grid-template-columns: 80px 1fr;
+    grid-template-rows: auto auto auto;
+    grid-template-areas:
+        "icon help"
+        "icon question"
+        "icon our-details";
+    align-items: center;
+    column-gap: 8px;
+
+}
+
+.our-info img {
+    grid-area: icon;
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    justify-self: flex-start;
+    align-self: flex-start;
+    grid-row: 1 / 4;
+
+}
+
+.our-info .help-title {
+    grid-area: help;
+    font-family: var(--font);
+    font-size: 1rem;
+    font-weight: 700;
+    margin: 0;
+    text-align: left;
+}
+
+.our-info .question {
+    grid-area: question;
+    font-family: var(--font);
+    font-size: 0.875rem;
+    font-weight: 400;
+    color: var(--font-color);
+    margin: 4px 0;
+    text-align: left;
+}
+
+.our-info .our-details {
+    grid-area: our-details;
+    font-family: var(--font);
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: var(--main-color);
+    margin: 0;
+    text-align: left;
+}
+
+/* ====== RIGHT SIDE — contact form ====== */
+.contack-detail-section .contack-us-form {
+    width: 55%;
+    align-self: flex-start;
+    background-color: var(--default-color);
+    border-radius: 12px;
+    padding: 28px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+/* ---- input-wrapper (matches your JSX) ---- */
+.contack-us-form .input-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    width: 100%;
+}
+
+/* ---- Labels ---- */
+.contack-us-form .input-wrapper label {
+    font-family: var(--font);
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: var(--font-color);
+}
+
+/* ---- Inputs / Select / Textarea ---- */
+.contack-us-form .input-wrapper input,
+.contack-us-form .input-wrapper select,
+.contack-us-form .input-wrapper textarea {
+    font-family: var(--font);
+    font-size: 0.9rem;
+    padding: 10px 14px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    background: transparent;
+    color: var(--font-color);
+    outline: none;
+    transition: border-color 0.2s;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.contack-us-form .input-wrapper input:focus,
+.contack-us-form .input-wrapper select:focus,
+.contack-us-form .input-wrapper textarea:focus {
+    border-color: var(--main-color);
+}
+
+.contack-us-form .input-wrapper input::placeholder,
+.contack-us-form .input-wrapper textarea::placeholder {
+    color: #b0c4c4;
+}
+
+.contack-us-form .input-wrapper textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+/* ---- Submit button ---- */
+.contack-us-form button[type="submit"] {
+    width: 100%;
+    padding: 14px;
+    background-color: var(--main-color);
+    color: #fff;
+    font-family: var(--font);
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: opacity 0.2s;
+    margin-top: 4px;
+}
+
+.contack-us-form button[type="submit"]:hover {
+    opacity: 0.88;
+}
+
+
 
 /* === Footer Section Start From Here === */
 

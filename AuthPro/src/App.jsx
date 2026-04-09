@@ -13,7 +13,7 @@ import { About } from "./componets/About";
 import { Datatable } from "./componets/Datatable";
 import { StudentForm } from "./componets/StudentForm";
 import { Signup } from "./componets/Signup";
-import { Contactus } from "./componets/Contactus";
+import { Contactus } from "./componets/contackComponent/Contactus";
 
 import { AuthProvider } from "./componets/Token";
 export function App() {
